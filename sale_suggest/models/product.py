@@ -16,6 +16,16 @@ class product_suggest(osv.Model):
         ),
     }
 
+    def get_quantity(self, cr, uid, id, product_quantity, context=None):
+        product_suggest = self.browse(cr, uid, id, context)
+        quantity = product_quantity * product_suggest.ratio
+        rounded = round(quantity)
+        if rounded == quantity or product_suggest.rounding == 'no':
+            return quantity
+        if product_suggest.rounding == 'up':
+            return round(quantity + 0.5)
+        return round(quantity - 0.5)
+
 
 class product_product(osv.Model):
     _inherit = 'product.product'
