@@ -45,6 +45,8 @@ Technical informations :
     'data': [
         'security/ir.model.access.csv',
         'views/product.xml',
+        'views/wizard_suggestions.xml',
+        'views/sale.xml',
     ],
     'demo': [],
     'installable': True,
