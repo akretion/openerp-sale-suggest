@@ -10,9 +10,9 @@
             <data>
                 <button name="invoice_cancel" position="after">
                     <button
-                        name="make_suggestions"
+                        name="%(sale_suggest.sale_order_suggest_act_window)d"
                         string="Suggestions"
-                        type="object"/>
+                        type="action" />
                 </button>
             </data>
         </field>
