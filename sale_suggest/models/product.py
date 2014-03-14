@@ -17,6 +17,9 @@ class product_suggest(osv.Model):
     }
 
     def get_quantity(self, cr, uid, id, product_quantity, context=None):
+        if hasattr(id, '__iter__'):
+            assert len(id) == 1
+            id = id[0]
         product_suggest = self.browse(cr, uid, id, context)
         quantity = product_quantity * product_suggest.ratio
         rounded = round(quantity)

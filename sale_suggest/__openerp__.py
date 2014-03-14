@@ -48,6 +48,6 @@ Technical informations :
         'views/wizard_suggestions.xml',
         'views/sale.xml',
     ],
-    'demo': [],
+    'demo': ['tests/data.xml'],
     'installable': True,
 }
