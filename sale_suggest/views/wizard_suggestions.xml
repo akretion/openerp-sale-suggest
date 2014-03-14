@@ -7,18 +7,23 @@
         <field name="model">sale.order.suggest</field>
         <field name="type">form</field>
         <field name="arch" type="xml">
-            <field name="id" />
-            <field name="order_id" />
-            <field name="line_ids">
-            <tree string="Suggestions">
-                <field name="product_id" />
-                <field name="quantity" />
-            </tree>
-            </field>
-            <group colspan="4">
-                <button string="Cancel" special="cancel" />
-                <button string="Add" name="add_suggestions" type="object" />
-            </group>
+            <form string="Suggestions" version="7.0">
+                <field name="line_ids">
+                    <tree string="Suggestions" editable="top">
+                        <field name="product_id" readonly="True" />
+                        <field name="quantity" />
+                    </tree>
+                </field>
+                <footer>
+                    <button
+                        name="add_suggestions"
+                        string="Apply"
+                        type="object"
+                        class="oe_highlight" />
+                    <label string="or" />
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+            </form>
         </field>
     </record>
 
