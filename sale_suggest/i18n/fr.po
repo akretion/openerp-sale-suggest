@@ -113,7 +113,7 @@ msgstr "ou"
 #. module: sale_suggest
 #: selection:product.suggest,rounding:0
 msgid "down"
-msgstr "En dessous"
+msgstr "en dessous"
 
 #. module: sale_suggest
 #: field:sale.order.suggest.line,quantity:0
