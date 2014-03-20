@@ -1,0 +1,122 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sale_suggest
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-20 10:46+0000\n"
+"PO-Revision-Date: 2014-03-20 10:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_suggest
+#: field:product.suggest,suggested_product_id:0
+msgid "Suggested product"
+msgstr "Article suggéré"
+
+#. module: sale_suggest
+#: code:_description:0
+#: model:ir.model,name:sale_suggest.model_product_product
+#: field:product.suggest,product_id:0
+#: field:sale.order.suggest.line,product_id:0
+#, python-format
+msgid "Product"
+msgstr "Article"
+
+#. module: sale_suggest
+#: field:product.suggest,ratio:0
+msgid "Ratio"
+msgstr "Ratio"
+
+#. module: sale_suggest
+#: code:_description:0
+#: model:ir.model,name:sale_suggest.model_sale_order_suggest_line
+#, python-format
+msgid "sale.order.suggest.line"
+msgstr "sale.order.suggest.line"
+
+#. module: sale_suggest
+#: selection:product.suggest,rounding:0
+msgid "no"
+msgstr "aucune"
+
+#. module: sale_suggest
+#: field:sale.order.suggest,line_ids:0
+#: field:sale.order.suggest,order_id:0
+#: field:sale.order.suggest.line,suggest_id:0
+msgid "unknown"
+msgstr "inconnu"
+
+#. module: sale_suggest
+#: code:_description:0
+#: model:ir.model,name:sale_suggest.model_product_suggest
+#, python-format
+msgid "product.suggest"
+msgstr "product.suggest"
+
+#. module: sale_suggest
+#: model:ir.actions.act_window,name:sale_suggest.sale_order_suggest_act_window
+#: view:product.product:0
+#: view:sale.order:0
+#: view:sale.order.suggest:0
+msgid "Suggestions"
+msgstr "Suggestions"
+
+#. module: sale_suggest
+#: selection:product.suggest,rounding:0
+msgid "up"
+msgstr "au dessus"
+
+#. module: sale_suggest
+#: code:_description:0
+#: model:ir.model,name:sale_suggest.model_sale_order_suggest
+#, python-format
+msgid "sale.order.suggest"
+msgstr "sale.order.suggest"
+
+#. module: sale_suggest
+#: field:product.product,suggested_for_product_ids:0
+msgid "Suggest this product with"
+msgstr "Suggérer cet article avec"
+
+#. module: sale_suggest
+#: field:product.product,suggested_product_ids:0
+msgid "Suggested products"
+msgstr "Articles suggérés"
+
+#. module: sale_suggest
+#: field:product.suggest,rounding:0
+msgid "Rounding method"
+msgstr "Méthode d'arrondi"
+
+#. module: sale_suggest
+#: view:sale.order.suggest:0
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: sale_suggest
+#: view:sale.order.suggest:0
+msgid "Apply"
+msgstr "Valider"
+
+#. module: sale_suggest
+#: view:sale.order.suggest:0
+msgid "or"
+msgstr "ou"
+
+#. module: sale_suggest
+#: selection:product.suggest,rounding:0
+msgid "down"
+msgstr "En dessous"
+
+#. module: sale_suggest
+#: field:sale.order.suggest.line,quantity:0
+msgid "Quantity"
+msgstr "Quantité"
+

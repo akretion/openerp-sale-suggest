@@ -16,6 +16,11 @@ class product_suggest(osv.Model):
         ),
     }
 
+    _defaults = {
+        'rounding': 'no',
+        'ratio': 1,
+    }
+
     def get_quantity(self, cr, uid, id, product_quantity, context=None):
         if hasattr(id, '__iter__'):
             assert len(id) == 1

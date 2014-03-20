@@ -11,7 +11,7 @@
                 <page string="Suggestions">
                     <group name="suggested">
                         <field name="suggested_product_ids">
-                            <tree>
+                            <tree editable="top">
                                 <field name="suggested_product_id" />
                                 <field name="ratio" />
                                 <field name="rounding" />
@@ -20,7 +20,7 @@
                     </group>
                     <group name="suggested_for">
                         <field name="suggested_for_product_ids">
-                            <tree>
+                            <tree editable="top">
                                 <field name="product_id" />
                                 <field name="ratio" />
                                 <field name="rounding" />
