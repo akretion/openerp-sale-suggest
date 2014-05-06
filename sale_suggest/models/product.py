@@ -9,7 +9,7 @@ class product_suggest(osv.Model):
             'product.product',
             'Suggested product'
         ),
-        'ratio': fields.float('Ratio', digits=[2, 1]),
+        'ratio': fields.float('Ratio', digits=[12, 3]),
         'rounding': fields.selection(
             [('no', 'no'), ('up', 'up'), ('down', 'down')],
             'Rounding method'
