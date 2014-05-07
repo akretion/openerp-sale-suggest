@@ -4,10 +4,13 @@ from osv import osv, fields
 class product_suggest(osv.Model):
     _name = 'product.suggest'
     _columns = {
-        'product_id': fields.many2one('product.product', 'Product'),
+        'product_id': fields.many2one(
+            'product.product', 'Product', required=True
+        ),
         'suggested_product_id': fields.many2one(
             'product.product',
-            'Suggested product'
+            'Suggested product',
+            required=True,
         ),
         'ratio': fields.float('Ratio', digits=[12, 3]),
         'rounding': fields.selection(
